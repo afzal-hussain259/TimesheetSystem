@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimesheetSystem", "TimesheetSystem\TimesheetSystem.csproj", "{53337E2D-D1E4-47BC-8FBC-EECBEC9B484A}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TimesheetDB", "TimesheetDB\TimesheetDB.sqlproj", "{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{53337E2D-D1E4-47BC-8FBC-EECBEC9B484A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53337E2D-D1E4-47BC-8FBC-EECBEC9B484A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53337E2D-D1E4-47BC-8FBC-EECBEC9B484A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEDE5E2-1681-4EDA-A8BF-25E37E7A9358}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
