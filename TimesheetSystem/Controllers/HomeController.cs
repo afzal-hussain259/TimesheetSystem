@@ -18,15 +18,23 @@ namespace TimesheetSystem.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public ActionResult Timesheet()
         {
+            ViewBag.Message = "Submit Timesheet";
+
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Timesheet(TimesheetModel timesheet)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (ModelState.IsValid)
+            {
+                ViewBag.Msg = "The User " + timesheet.UserName + " has successfully added " + timesheet.HoursWorked + " hours to project " + timesheet.Project;
+            }
+
+            return View();
         }
     }
 }
