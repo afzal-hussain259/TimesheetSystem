@@ -8,12 +8,10 @@ namespace TimesheetSystem.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly ITimesheetProcessor _timesheetProcessor;
 
-        public HomeController(ILogger<HomeController> logger, ITimesheetProcessor timesheetProcessor)
+        public HomeController(ITimesheetProcessor timesheetProcessor)
         {
-            _logger = logger;
             _timesheetProcessor = timesheetProcessor;
         }
 
@@ -51,7 +49,7 @@ namespace TimesheetSystem.Controllers
             return View();
         }
 
-        public ActionResult ExportTimesheetToCSV()
+        public FileContentResult ExportTimesheetToCSV()
         {
             var builder = new StringBuilder();
             builder.AppendLine("UserName,Date,Project,DescriptionOfTasks,HoursWorked,TotalHoursForTheDay");
